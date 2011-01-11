@@ -85,9 +85,10 @@
     (let ((case-fold-search isearch-case-fold-search))
       (occur (if isearch-regexp isearch-string (regexp-quote isearch-string))))))
 
-;; Org
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(setq org-log-done t)
 
 (provide 'starter-kit-bindings)
 ;;; starter-kit-bindings.el ends here
