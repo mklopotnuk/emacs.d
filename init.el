@@ -30,6 +30,7 @@
 (setq package-user-dir (concat dotfiles-dir "elpa"))
 (setq custom-file (concat dotfiles-dir "custom.el"))
 
+;; (require 'dokuwiki)
 (require 'package)
 (package-initialize)
 (require 'starter-kit-elpa)
